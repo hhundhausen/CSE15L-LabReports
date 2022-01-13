@@ -2,11 +2,10 @@
 ======================================================
 Logging Into A Course-Specific Account On ieng6
 -------------------------------------------------------
+
 *Background*    : 
 
-Software Engineers can't store a company's large amounts of data on their personal computers to complete their work, requiring them to access a personalized account from their local computers to a remote machine. To understand and replication how this process works this lab and the steps below, explain how to use a CSE15L course-specific account to access a computer in the CSE basement. 
-
-
+Software Engineers can't store a company's large amounts of data on their personal computer to complete their work, requiring them to access a personalized account from their local computers to a remote machine. To understand and replicate how this process works this lab and the steps below, show how to use a CSE15L course-specific account to access a computer in the CSE basement. 
 
 *Step One*    : Installing Visual Studio Code 
 
@@ -20,15 +19,15 @@ Visual Studio Code is an Integration Development Environment (IDE) for macOS, Wi
 
 
 *Step Two*   : Remotely Connnecting 
+>To 
 
->
+1. Access your CSE15L course specific account
 1. Open a **terminal** in VSCode 
-2. Then, insert the command **ssh cs15lwi22zz@ieng6.ucsd.edu** (on the first line in the screenshot you can see how I put mine) 
-3. Then, insert the password that you previously created, if you just resetted it might take a while this problem happened to me  
-3. If this is the first time connecting to the server, you'll getting a message to continue connecting type **yes** 
-4. Similary in the screenshot starting on line three it will inform you the last time you loggined in and a lot of other account specific information 
-5. If you see this that means you were successful and that your terminal is connected to a computer in the CSE basement and any commands you run will run on that computer
- - - If you need to 
+2. Insert the command **ssh cs15lwi22zz@ieng6.ucsd.edu** (make sure to replace *zz* with your own specific three letter sequence) 
+3. Put in the password previously created, it takes about 15-20min for the password to update if you recently resetted it 
+- If this is the first time connecting to the server, you'll getting a message to continue connecting please type **yes** 
+4. Similary in the screenshot starting on line 3,once you successfully logged-in you will be informed when you last time logged-in and other account specific information 
+5. Your terminal is now connected to a computer in the CSE basement and any commands you run will run on that computer
 
 
 ![Image](RemotelyConnecting.png)
@@ -36,8 +35,11 @@ Visual Studio Code is an Integration Development Environment (IDE) for macOS, Wi
 
 *Step Three* : Trying Some Commands 
 
-After ssh-ing, to demonstrate different commands that can be run a few different times. 
-Here are some specific commands that can be found in the screenshot below. 
+To demonstrate how any commands that are run will run on the computer in the CSE basement on the screenshot after ssh-ing a few specific commands were run. Here are their descriptions... 
+
+> 
+
+ 
 
 
 *Step Four*  : Moving Files with scp 
