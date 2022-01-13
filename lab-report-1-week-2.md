@@ -1,7 +1,8 @@
-**CSE15L Week 2 Lab Report 1 by Helena Hundhausen** 
+**Week 2 Lab Report 1 by Helena Hundhausen** 
 ======================================================
 Logging Into A Course-Specific Account On ieng6
--------------------------------------------------------
+
+---
 
 *Background*    : 
 
