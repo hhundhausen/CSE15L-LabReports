@@ -15,8 +15,10 @@ When working with a large amount of data accessing a remote machine may be neces
 In this step, we'll be installing Visual Studio Code, an Integration Development Environment (IDE), which is important because this lab uses its integrated terminal palette to gain access to our CSE15L course-specific ieng6 account. 
 
 >To download and install VS Code: 
-1. Depending on the computer you're using, different versions of VS Code are available; for the link to all versions, click [here](https://code.visualstudio.com/Download)! 
-2. Now, click [here](https://code.visualstudio.com/docs/setup/setup-overview) for more information on the steps needed to finish installing VS Code onto the type of computer it's downloaded on, once installed, you'll be able to open a window very similar to the screenshot below...
+1. Depending on the computer you're using, different versions of VS Code are available. For the link to all versions, click [here](https://code.visualstudio.com/Download)! 
+2. Now, click [here](https://code.visualstudio.com/docs/setup/setup-overview) for more information on the steps needed to finish installing VS Code onto the type of computer it's downloaded on! 
+3. Once installed, you'll be able to open a window very similar to the screenshot below...
+* Note that I’ve changed specific settings in my VS Code, so my screenshot may look slightly different from the window you have opened
 ![Image](InstallingVSCode.png)
 
 
@@ -25,11 +27,13 @@ In this step, we'll be installing Visual Studio Code, an Integration Development
 
 In order to connect to the computer in the CSE basement, we have to obtain a course-specific ieng6 account. 
 
->If you haven't found your account yet [click here](https://sdacs.ucsd.edu/~icc/index.php), and follow these steps: 
-1. Enter your AD and Username and find the CSE15L ieng6 specific account under *additional accounts*; it should very similar to *"cs15lwi22aco"*
+>If you haven't found your account yet, and follow these steps: 
+1. Click here for [account lookup!](https://sdacs.ucsd.edu/~icc/index.php), 
+2. Enter your AD and Username 
+3. Find the CSE15L ieng6 specific account under *additional accounts*; it should very similar to *"cs15lwi22aco"*
 * The three-letters at the end **aco** should be replaced with the particular combination given to you
 ![image](courseAccount.png)
-2. Then, click on your account to reset the password 
+4. Then, click on your account to reset the password 
 * To avoid problems in the following steps, make the password short and straightforward while still secure 
 
 >If you've gained access to your account, follow the steps in the screenshot below to establish a new terminal in VS code and enable a secure connection to the remote computer using a command called **ssh**. 
@@ -51,10 +55,16 @@ Feel free to experiment this step on your VS Code!
 
 Another essential thing to learn is transferring files back and forth between the local/remote computers using a command called *scp*. The *scp* command, however, takes a long time, and if you had to run it throughout a PA or anything else, simply checking to see whether you had the required output would be very time-consuming. Within the next steps, we'll see how to resolve this problem. 
 
-To understand how to move files follow the steps in the screenshot below: 
+>To understand how to move files follow these steps(also the screenshot displays a very nice visual): 
+1. Make sure you’re not logged into the remote computer
+2. Create a .java file on your computer
+- Feel free to copy the WhereAmI.java file on the screenshot below
+3. Log into the terminal from the directory where the file was made and run the scp command along with your personal username to log back into the remote computer: 
+* scp WhereAmI.java cs15lwi22aco@ieng6.ucsd.edu:~/
+4. Enter your password
+5. Try the command *ls* to list the file
+
 ![Image](MovingFiles.png)
-
-
 
 *Step Five*  : Setting an SSH Key 
 
