@@ -28,7 +28,7 @@ In this step, we'll be installing Visual Studio Code, an Integration Development
 In order to connect to the computer in the CSE basement, we have to obtain a course-specific ieng6 account. 
 
 >If you haven't found your account yet, and follow these steps: 
-1. Click here for [account lookup!](https://sdacs.ucsd.edu/~icc/index.php), 
+1. Click here for [account lookup!](https://sdacs.ucsd.edu/~icc/index.php) 
 2. Enter your AD and Username 
 3. Find the CSE15L ieng6 specific account under *additional accounts*; it should very similar to *"cs15lwi22aco"*
 * The three-letters at the end **aco** should be replaced with the particular combination given to you
@@ -55,7 +55,7 @@ Feel free to experiment this step on your VS Code!
 
 Another essential thing to learn is transferring files back and forth between the local/remote computers using a command called *scp*. The *scp* command, however, takes a long time, and if you had to run it throughout a PA or anything else, simply checking to see whether you had the required output would be very time-consuming. Within the next steps, we'll see how to resolve this problem. 
 
->To understand how to move files follow these steps(also the screenshot displays a very nice visual): 
+>To understand how to move files follow these steps (also the screenshot displays a very nice visual): 
 1. Make sure you’re not logged into the remote computer
 2. Create a .java file on your computer
 - Feel free to copy the WhereAmI.java file on the screenshot below
@@ -68,7 +68,9 @@ Another essential thing to learn is transferring files back and forth between th
 
 *Step Five*  : Setting an SSH Key 
 
-Every time we've had to log in or run *scp*, a password that isn't visible had to be typed for security purposes which is very time-consuming; yet, a helpful command called *ssh-keygen* allows us not to have to type a password by creating a pair of files on your local computer called: *public key* and *private key*. 
+Every time we've had to log in or run *scp*, a password that isn't visible had to be typed for security purposes which is very time-consuming; yet, a helpful command called *ssh-keygen* allows us not to have to type a password by creating a pair of files on your local computer called: 
+- *public key* 
+- *private key*. 
 
 Follow the steps in the screenshot below to generate the *public key* and *private key*.  
 >Before continuing, read here for important information and clarification:  
@@ -82,7 +84,7 @@ Now that the *public key* and *private key* are generated follow the steps in th
 
 *Step Six*   : Optimizing Remote Running 
 
-Now that we don't need to input a password to ***ssh*** or ***scp***, we can concatenate the command with other commands, such as the ones previously tested in step three. Additionally, this will make editing locally a lot more efficient and less time-consuming. 
+Now that we don't need to input a password to ***ssh*** or ***scp***, we can concatenate the command with other commands, such as the ones previously tested in *step three*. Additionally, this will make editing locally a lot more efficient and less time-consuming. 
 
 To run several commands on the same line, write the command at the end in *" quotes,"* or divide the commands with *semicolons*.
 
