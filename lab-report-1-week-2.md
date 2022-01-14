@@ -27,7 +27,6 @@ Installing Visual Studio Code, an Integration Development Environment (IDE), is 
 
 
 
-
 *Step Two*   :  Remotely Connnecting 
 
 In order to connect to the computer in the CSE basement, we have to obtain a course-specific ieng6 account. 
@@ -60,14 +59,14 @@ Your terminal is now connected to a computer in the CSE basement!
 
 *Step Three* : Trying Some Commands 
 
-One important and noteworthy about *ssh* is that commands on your local computer will be executed on the remote computer while you're connected to the secure connection it establishes. The screenshot below provides a demonstration of the different commands I tested for fun. 
+One important and noteworthy thing about *ssh* is that commands on your local computer will be executed on the remote computer while you're connected to the secure connection it establishes. The screenshot below provides a demonstration of the different commands I tested for fun. 
 
 Feel free to experiment this step on your VS Code! 
 ![Image](TryingCommands.png)
 
 *Step Four*  : Moving Files with scp 
 
-Another essential ability to learn is transferring files back and forth between the local/remote computers using a command called *SCP*.
+Another essential ability to learn is transferring files back and forth between the local/remote computers using a command called *scp*.
 
 >To move files follow these steps:  
 1. Make sure you're not logged into the remote computer 
@@ -78,39 +77,42 @@ Another essential ability to learn is transferring files back and forth between 
 4. Enter your password 
 5. Try the command *ls* to list the file
 
-A visual example can also be found in the screenshot below. 
-
 The *scp* command, however, takes a long time, and if you had to run it throughout a PA or anything else, simply checking to see whether you had the required output would be very time-consuming. Within the next steps, we'll see how to resolve this problem. 
 
 ![Image](MovingFiles.png)
 
 *Step Five*  : Setting an SSH Key 
 
-Every time we've had to log in or run *scp*, a password that isn't visible had to be typed for security purposes. Yet, a helpful command called *ssh-keygen* allows us not to have to type a password for *ssh*. The command is able to solve this problem by creating a pair of files on your local computer called: 
- - public key(stored in a file id_rsa.pub) 
- - private key(stored in a file id_rsa) 
+Every time we've had to log in or run *scp*, a password that isn't visible had to be typed for security purposes. Yet, a helpful command called *ssh-keygen* allows us not to have to type a password. Further, the command is able to solve this problem by creating a pair of files on your local computer called: 
+ - public key  (stored in a file id_rsa.pub) 
+ - private key (stored in a file id_rsa) 
 
-The first screenshot right shows the steps needed to complete the first part of using ssh-keygen by generating the public key and private key.  
+The first screenshot below shows the steps needed to complete the first part of using ssh-keygen by generating the public key and private key.  
 >Before continuing, read here for important information and clarification:  
 - When prompted to enter a new password, press "enter" since we no longer want to have to endure the pain of password entering
 - Also we don't need to type a password because we aren't engaging with very secure data 
 
 ![Image](sshKey1.png)
 
-Now the *public key* and *private key* are generated follow the steps in the screenshot right below to understand how to copy the *public key* and create a *.ssh directory* to put it onto your course-specific account's server. 
+Now that the *public key* and *private key* are generated follow the steps in the screenshot right below to understand how to copy the *public key* and create a *.ssh directory* to put it onto your course-specific account's server. 
 
 ![Image](sshKey2.png)
 
 *Step Six*   : Optimizing Remote Running 
 
-Now that we don't need to input a password to ***ssh*** or ***scp***, we can concatenate the command with other commands, such as the ones previously tested, to make editing locally a lot more efficient. The screenshot below displays a few examples. Overall, this step is very convenient and saves a lot of time. 
+Now that we don't need to input a password to ***ssh*** or ***scp***, we can concatenate the command with other commands, such as the ones previously tested, to make editing locally a lot more efficient. 
+
+To run several commands on the same line, write the command at the end in *" quotes,"* or divide the commands with *semicolons*.
+
+The screenshot below displays a few examples. Overall, this step is very convenient and saves a lot of time. 
 
 Feel Free to experiment this step on your VS Code!
 
 ![Image](RemoteRunning.png)
 
 
-Thank you for reading this lab's report!
+---
+You've reached the end. Thank you for reading this lab report!
 
 
 
