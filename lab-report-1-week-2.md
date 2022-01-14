@@ -27,7 +27,7 @@ In this step, we'll be installing Visual Studio Code, an Integration Development
 
 In order to connect to the computer in the CSE basement, we have to obtain a course-specific ieng6 account. 
 
->If you haven't found your account yet, and follow these steps: 
+>If you haven't found your account yet, follow these steps: 
 1. Click here for [account lookup!](https://sdacs.ucsd.edu/~icc/index.php) 
 2. Enter your AD and Username 
 3. Find the CSE15L ieng6 specific account under *additional accounts*; it should very similar to *"cs15lwi22aco"*
@@ -55,14 +55,14 @@ Feel free to experiment this step on your VS Code!
 
 Another essential thing to learn is transferring files back and forth between the local/remote computers using a command called *scp*. The *scp* command, however, takes a long time, and if you had to run it throughout a PA or anything else, simply checking to see whether you had the required output would be very time-consuming. Within the next steps, we'll see how to resolve this problem. 
 
->To understand how to move files follow these steps (also the screenshot displays a very nice visual): 
+>Follow these steps to understand how to move files (also the screenshot displays a very nice visual): 
 1. Make sure you’re not logged into the remote computer
 2. Create a .java file on your computer
 - Feel free to copy the WhereAmI.java file on the screenshot below
-3. Log into the terminal from the directory where the file was made and run the scp command along with your personal username to log back into the remote computer: 
+3. Log into the terminal from the directory where the file was made and run the **scp** command along with your personal username to log back into the remote computer: 
 * scp WhereAmI.java cs15lwi22aco@ieng6.ucsd.edu:~/
 4. Enter your password
-5. Try the command *ls* to list the file
+5. Try the command **ls** to list the file
 
 ![Image](MovingFiles.png)
 
@@ -74,7 +74,7 @@ Every time we've had to log in or run *scp*, a password that isn't visible had t
 
 Follow the steps in the screenshot below to generate the *public key* and *private key*.  
 >Before continuing, read here for important information and clarification:  
-- When prompted to enter a new password, press "enter" since we no longer want to have to endure the pain of password entering *(we don't need to type a password because we aren't engaging with very secure data)* 
+- When prompted to enter a new password, press "enter" since we no longer want to have to endure the pain of password entering *(a password isn't needed because we aren't engaging with very secure data)* 
 
 ![Image](sshKey1.png)
 
@@ -88,7 +88,7 @@ Now that we don't need to input a password to ***ssh*** or ***scp***, we can con
 
 To run several commands on the same line, write the command at the end in *" quotes,"* or divide the commands with *semicolons*.
 
-The screenshot below displays a few examples; feel free to experiment this step on your VS Code!
+The screenshot below displays a few examples. Feel free to experiment this step on your VS Code!
 
 ![Image](RemoteRunning.png)
 
