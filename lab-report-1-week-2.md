@@ -55,7 +55,7 @@ Feel free to experiment this step on your VS Code!
 
 Another essential thing to learn is transferring files back and forth between the local/remote computers using a command called *scp*. The *scp* command, however, takes a long time, and if you had to run it throughout a PA or anything else, simply checking to see whether you had the required output would be very time-consuming. Within the next steps, we'll see how to resolve this problem. 
 
->Follow these steps to understand how to move files (also the screenshot displays a very nice visual): 
+>Follow these steps to understand how to move files (also the screenshot below displays a very nice visual): 
 1. Make sure you’re not logged into the remote computer
 2. Create a .java file on your computer
 - Feel free to copy the WhereAmI.java file on the screenshot below
