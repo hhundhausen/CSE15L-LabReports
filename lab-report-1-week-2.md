@@ -10,7 +10,7 @@
 When working with a large amount of data accessing a remote machine may be necessary. To understand how this process works, this lab and the steps below demonstrate how to gain access to a computer in the CSE basement using a CSE15L course-specific ieng6 account. 
 
 
-*Step One*    : Installing Visual Studio Code 
+# *Step One*    : Installing Visual Studio Code 
 
 In this step, we'll be installing Visual Studio Code, an Integration Development Environment (IDE), which is important because this lab uses its integrated terminal palette to gain access to our CSE15L course-specific ieng6 account. 
 
@@ -23,7 +23,7 @@ In this step, we'll be installing Visual Studio Code, an Integration Development
 
 
 
-*Step Two*   :  Remotely Connnecting 
+# *Step Two*   :  Remotely Connnecting 
 
 In order to connect to the computer in the CSE basement, we have to obtain a course-specific ieng6 account. 
 
@@ -44,14 +44,14 @@ In order to connect to the computer in the CSE basement, we have to obtain a cou
 ![Image](RemotelyConnecting.png)
 
 
-*Step Three* : Trying Some Commands 
+# *Step Three* : Trying Some Commands 
 
 One important thing about *ssh* is that commands on your local computer will be executed on the remote computer while you're connected to the secure connection it establishes. The screenshot below provides a demonstration of the different commands I tested for fun. 
 
 Feel free to experiment this step on your VS Code! 
 ![Image](TryingCommands.png)
 
-*Step Four*  : Moving Files with scp 
+# *Step Four*  : Moving Files with scp 
 
 Another essential thing to learn is transferring files back and forth between the local/remote computers using a command called *scp*. The *scp* command, however, takes a long time, and if you had to run it throughout a PA or anything else, simply checking to see whether you had the required output would be very time-consuming. Within the next steps, we'll see how to resolve this problem. 
 
@@ -66,7 +66,7 @@ Another essential thing to learn is transferring files back and forth between th
 
 ![Image](MovingFiles.png)
 
-*Step Five*  : Setting an SSH Key 
+# *Step Five*  : Setting an SSH Key 
 
 Every time we've had to log in or run *scp*, a password that isn't visible had to be typed for security purposes which is very time-consuming; yet, a helpful command called *ssh-keygen* allows us not to have to type a password by creating a pair of files on your local computer called: 
 - *public key* 
@@ -82,9 +82,9 @@ Now that the *public key* and *private key* are generated follow the steps in th
 
 ![Image](sshKey2.png)
 
-*Step Six*   : Optimizing Remote Running 
+# *Step Six*   : Optimizing Remote Running 
 
-Now that we don't need to input a password to ***ssh*** or ***scp***, we can concatenate the command with other commands, such as the ones previously tested in *step three*. Additionally, this will make editing locally a lot more efficient and less time-consuming. 
+Now that we don't need to input a password to ***ssh*** or ***scp***, we can concatenate the command with other commands, such as the ones previously tested in *step three*. Additionally, this will make editing locally a lot more efficient and less time-consuming, because the amount of keystrokes is only 34. 
 
 To run several commands on the same line, write the command at the end in *" quotes,"* or divide the commands with *semicolons*.
 
