@@ -30,13 +30,15 @@ In order to connect to the computer in the CSE basement, we have to obtain a cou
 >If you haven't found your account yet, follow these steps: 
 1. Click here for [account lookup!](https://sdacs.ucsd.edu/~icc/index.php) 
 2. Enter your AD and Username 
-3. Find the CSE15L ieng6 specific account under *additional accounts*; it should very similar to *"cs15lwi22aco"*
+3. Find the CSE15L ieng6 specific account under *additional accounts*; it should very similar to... 
+```cs15lwi22aco``` 
 * The three-letters at the end **aco** should be replaced with the particular combination given to you
 ![image](courseAccount.png)
 4. Then, click on your account to reset the password 
 * To avoid problems in the following steps, make the password short and straightforward while still secure 
 
->If you've gained access to your account, follow the steps in the screenshot below to establish a new terminal in VS code and enable a secure connection to the remote computer using a command called **ssh**. 
+>If you've gained access to your account, follow the steps in the screenshot below to establish a new terminal in VS code and enable a secure connection to the remote computer using a command called 
+```ssh```
 * Before continuing, read here for important information and clarification:  
 - - It takes about 15-20min for the password to reset
 * * If you're having issues or problems with completing this step there could be minimal typos in your code, so go back and check previous lines 
@@ -53,22 +55,22 @@ Feel free to experiment this step on your VS Code!
 
 # *Step Four*  : Moving Files with scp 
 
-Another essential thing to learn is transferring files back and forth between the local/remote computers using a command called *scp*. The *scp* command, however, takes a long time, and if you had to run it throughout a PA or anything else, simply checking to see whether you had the required output would be very time-consuming. Within the next steps, we'll see how to resolve this problem. 
+Another essential thing to learn is transferring files back and forth between the local/remote computers using a command called ```scp```. The ```scp``` command, however, takes a long time, and if you had to run it throughout a PA or anything else, simply checking to see whether you had the required output would be very time-consuming. Within the next steps, we'll see how to resolve this problem. 
 
 >Follow these steps to understand how to move files (also the screenshot below displays a very nice visual): 
 1. Make sure you’re not logged into the remote computer
 2. Create a .java file on your computer
 - Feel free to copy the WhereAmI.java file on the screenshot below
-3. Log into the terminal from the directory where the file was made and run the **scp** command along with your personal username to log back into the remote computer: 
-* scp WhereAmI.java cs15lwi22aco@ieng6.ucsd.edu:~/
+3. Log into the terminal from the directory where the file was made and run the ```scp``` command along with your personal username to log back into the remote computer: 
+```scp WhereAmI.java cs15lwi22aco@ieng6.ucsd.edu:~/```
 4. Enter your password
-5. Try the command **ls** to list the file
+5. Try the command ```ls``` to list the file
 
 ![Image](MovingFiles.png)
 
 # *Step Five*  : Setting an SSH Key 
 
-Every time we've had to log in or run *scp*, a password that isn't visible had to be typed for security purposes which is very time-consuming; yet, a helpful command called *ssh-keygen* allows us not to have to type a password by creating a pair of files on your local computer called: 
+Every time we've had to log in or run ```scp```, a password that isn't visible had to be typed for security purposes which is very time-consuming; yet, a helpful command called ```ssh-keygen``` allows us not to have to type a password by creating a pair of files on your local computer called: 
 - *public key* 
 - *private key*. 
 
@@ -78,15 +80,15 @@ Follow the steps in the screenshot below to generate the *public key* and *priva
 
 ![Image](sshKey1.png)
 
-Now that the *public key* and *private key* are generated follow the steps in the screenshot right below to understand how to copy the *public key* and create a *.ssh directory* to put it onto your course-specific account's server. 
+Now that the *public key* and *private key* are generated follow the steps in the screenshot right below to understand how to copy the *public key* and create a ```.ssh directory``` to put it onto your course-specific account's server. 
 
 ![Image](sshKey2.png)
 
 # *Step Six*   : Optimizing Remote Running 
 
-Now that we don't need to input a password to ***ssh*** or ***scp***, we can concatenate the command with other commands, such as the ones previously tested in *step three*. Additionally, this will make editing locally a lot more efficient and less time-consuming, because the amount of keystrokes is only 34. 
+Now that we don't need to input a password to ```ssh``` or ```scp```, we can concatenate the command with other commands, such as the ones previously tested in *step three*. Additionally, this will make editing locally a lot more efficient and less time-consuming. 
 
-To run several commands on the same line, write the command at the end in *" quotes,"* or divide the commands with *semicolons*.
+To run several commands on the same line, write the command at the end in *" quotes,"* or divide the commands with *semicolons*. Additionally, the amount of keystrokes that this should take you is about six key strokes.  
 
 The screenshot below displays a few examples. Feel free to experiment this step on your VS Code!
 
