@@ -83,11 +83,13 @@ Now that the *public key* and *private key* are generated follow the steps in th
 
 # *Step Six*   : Optimizing Remote Running 
 
-Now that we don't need to input a password to ```ssh``` or ```scp```, we can concatenate the command with other commands, such as the ones previously tested in *step three*. Additionally, this will make editing locally a lot more efficient and less time-consuming. For example, it only took me **seven keystrokes**.  
+Now that we don't need to input a password to ```ssh``` or ```scp```, we can concatenate the command with other commands, such as the ones previously tested in *step three*. Additionally, this will make editing locally a lot more efficient and less time-consuming. To run several commands on the same line, write the command at the end in *" quotes,"* or divide the commands with *semicolons*.  
 
-To run several commands on the same line, write the command at the end in *" quotes,"* or divide the commands with *semicolons*.  
+For example, I was able to run this line of code below which allowed me to remotely log-in and try a command in only  **seven keystrokes**: 
 
-The screenshot below displays a few examples. Feel free to experiment this step on your VS Code!
+``` ssh cs15lwi22aco@ieng6.ucsd.edu "ls"```
+
+The screenshot below displays a this example and a few others. Feel free to experiment this step on your VS Code!
 
 ![Image](RemoteRunning.png)
 
