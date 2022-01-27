@@ -5,7 +5,7 @@
 
 ---
 
-*Background*    : 
+# *Background*    : 
 
 When working with a large amount of data accessing a remote machine may be necessary. To understand how this process works, this lab and the steps below demonstrate how to gain access to a computer in the CSE basement using a CSE15L course-specific ieng6 account. 
 
@@ -48,7 +48,7 @@ In order to connect to the computer in the CSE basement, we have to obtain a cou
 
 # *Step Three* : Trying Some Commands 
 
-One important thing about *ssh* is that commands on your local computer will be executed on the remote computer while you're connected to the secure connection it establishes. The screenshot below provides a demonstration of the different commands I tested for fun. 
+One important thing about ``ssh`` is that commands on your local computer will be executed on the remote computer while you're connected to the secure connection it establishes. The screenshot below provides a demonstration of the different commands I tested for fun. 
 
 Feel free to experiment this step on your VS Code! 
 ![Image](TryingCommands.png)
@@ -60,7 +60,7 @@ Another essential thing to learn is transferring files back and forth between th
 >Follow these steps to understand how to move files (also the screenshot below displays a very nice visual): 
 1. Make sure you’re not logged into the remote computer
 2. Create a .java file on your computer
-- Feel free to copy the WhereAmI.java file on the screenshot below
+- Feel free to copy the ``WhereAmI.java`` file on the screenshot below
 3. Log into the terminal from the directory where the file was made and run the ```scp``` command along with your personal username to log back into the remote computer: 
 ```scp WhereAmI.java cs15lwi22aco@ieng6.ucsd.edu:~/```
 4. Enter your password
@@ -88,7 +88,7 @@ Now that the *public key* and *private key* are generated follow the steps in th
 
 Now that we don't need to input a password to ```ssh``` or ```scp```, we can concatenate the command with other commands, such as the ones previously tested in *step three*. Additionally, this will make editing locally a lot more efficient and less time-consuming. 
 
-To run several commands on the same line, write the command at the end in *" quotes,"* or divide the commands with *semicolons*. Additionally, the amount of keystrokes that this should take you is about six key strokes.  
+To run several commands on the same line, write the command at the end in *" quotes,"* or divide the commands with *semicolons*. Additionally, the amount of keystrokes that this should take you is about seven keystrokes.  
 
 The screenshot below displays a few examples. Feel free to experiment this step on your VS Code!
 
