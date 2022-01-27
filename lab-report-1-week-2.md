@@ -30,10 +30,7 @@ In order to connect to the computer in the CSE basement, we have to obtain a cou
 >If you haven't found your account yet, follow these steps: 
 1. Click here for [account lookup!](https://sdacs.ucsd.edu/~icc/index.php) 
 2. Enter your AD and Username 
-3. Find the CSE15L ieng6 specific account under *additional accounts*; it should very similar to... 
-
-```cs15lwi22aco```
-
+3. Find the CSE15L ieng6 specific account under *additional accounts*; it should very similar to... ```cs15lwi22aco```
 * The three-letters at the end **aco** should be replaced with the particular combination given to you
 ![image](courseAccount.png)
 4. Then, click on your account to reset the password 
@@ -61,7 +58,7 @@ Another essential thing to learn is transferring files back and forth between th
 >Follow these steps to understand how to move files (also the screenshot below displays a very nice visual): 
 1. Make sure you’re not logged into the remote computer
 2. Create a .java file on your computer
-- Feel free to copy the ``WhereAmI.java`` file on the screenshot below
+- Feel free to copy the ``WhereAmI.java``  file on the screenshot below
 3. Log into the terminal from the directory where the file was made and run the ```scp``` command along with your personal username to log back into the remote computer: ```scp WhereAmI.java cs15lwi22aco@ieng6.ucsd.edu:~/```
 4. Enter your password
 5. Try the command ```ls``` to list the file
@@ -86,7 +83,7 @@ Now that the *public key* and *private key* are generated follow the steps in th
 
 # *Step Six*   : Optimizing Remote Running 
 
-Now that we don't need to input a password to ```ssh``` or ```scp```, we can concatenate the command with other commands, such as the ones previously tested in *step three*. Additionally, this will make editing locally a lot more efficient and less time-consuming because it only took me **seven keystrokes**.  
+Now that we don't need to input a password to ```ssh``` or ```scp```, we can concatenate the command with other commands, such as the ones previously tested in *step three*. Additionally, this will make editing locally a lot more efficient and less time-consuming. For example, it only took me **seven keystrokes**.  
 
 To run several commands on the same line, write the command at the end in *" quotes,"* or divide the commands with *semicolons*.  
 
@@ -97,9 +94,6 @@ The screenshot below displays a few examples. Feel free to experiment this step 
 
 ---
 You've reached the end. Thank you for reading this lab report!
-
-
-
 
 
 
