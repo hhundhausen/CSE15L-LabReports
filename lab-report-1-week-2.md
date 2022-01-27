@@ -62,7 +62,9 @@ Another essential thing to learn is transferring files back and forth between th
 2. Create a .java file on your computer
 - Feel free to copy the ``WhereAmI.java`` file on the screenshot below
 3. Log into the terminal from the directory where the file was made and run the ```scp``` command along with your personal username to log back into the remote computer: 
+
 ```scp WhereAmI.java cs15lwi22aco@ieng6.ucsd.edu:~/```
+
 4. Enter your password
 5. Try the command ```ls``` to list the file
 
