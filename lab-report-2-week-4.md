@@ -10,8 +10,8 @@
 ![image](Fii_1.png)
 
 
-- In this computer program, the failure-inducing input was a file that had an open parenthesis at the end (this is shown in the screenshot above). For better reference, it was similar to: ```[link](print.com```
-* * Yet, this input caused a bug in the computer program of not having the right syntax for a file which thus created a symptom, a faulty in the program behavior, to be an infinite loop. 
+- In this computer program, the failure-inducing input was a file with an open parenthesis at the end (shown in the screenshot above). For better reference, here is an example:  ```[link](print.com```
+* * Yet, this input caused a bug in the computer program, which was that it did not have the correct syntax for a file. Thus, the bug created a faulty symptom in the program behavior, to be an output of an infinite loop.
 
 # Code Change Two: *A File With An Image Reference* 
 - Screenshot of the *code change* from **Github**: 
@@ -23,8 +23,8 @@
 ![image](Fii_2.png)
 
 
-- In this computer program, the failure-inducing input was a file that had an image reference (this is shown in the screenshot above).For better reference, it was similar to: ```![image](print.png)```.
-* * However, this input caused the bug of having the wrong syntax, and made the image appear as a link. Additionally, the input and bug had the program produce a symtom which was printing the image name along with the other file names. 
+- In this computer program, the failure-inducing input was a file with an image reference (shown in the screenshot above). For better reference, here is an example: ```![image](print.png)```
+* * However, this input caused a bug because it had the wrong syntax and made the image appear as a link. Further, the input and bug made the program produce a symptom of an incorrect output: printing the image name and the other file names.
 
 
 # Code Change Three :  *A File That Uses [] and (), But Very Far Apart*
@@ -37,5 +37,5 @@
 ![image](Fii_3.png)
 
 
-- In this computer program, the failure-inducing input was a file that used a pair of brackets **[]** and a pair of parenthesis **()**, but were very spaced out from each other (this is shown in the screenshot above). For better reference, it was similar to: ```[link]                  (space)```
-* * However, this input caused a bug because the syntax for a link was incorrect and the program exectued very similar behavior to the program above by outputing the link that was syntactically inccorect with the links that were correct. Thus, the symptom of having an incorrect output occured due to the input and bug. 
+- In this computer program, the failure-inducing input was a file that used a pair of brackets **[]** and a pair of parenthesis **()** but was very spaced out from each other (this is shown in the screenshot above). For better reference, here is an example: ```[link]                  (space)```
+* * Although, this input caused a bug because the syntax for a link was incorrect. Moreover, the program executed a similar behavior to the program above, which outputted the syntactically incorrect link along with the correct links. Thus, the symptom of having an incorrect output occurred due to the input and bug. 
