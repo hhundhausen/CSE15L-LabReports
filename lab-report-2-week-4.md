@@ -1,4 +1,5 @@
 # **Week 4 Lab Report 2**
+---
 
 # Code Change One: *A File With An Open Parenthesis*
 - Screenshot of the *code change* from **Github**: 
@@ -24,7 +25,7 @@
 
 
 - In this computer program, the failure-inducing input was a file with an image reference (shown in the screenshot above). For better reference, here is an example: ```![image](print.png)```
-* * However, this input caused a bug because it had the wrong syntax and made the image appear as a link. Further, the input and bug made the program produce a symptom of an incorrect output: printing the image name and the other file names.
+* * Yet, this input caused a bug because it had the wrong syntax and made the image appear as a link. Further, the input and bug made the program produce a symptom of an incorrect output: printing the image name and the other file names.
 
 
 # Code Change Three :  *A File That Uses [] and (), But Very Far Apart*
@@ -37,5 +38,5 @@
 ![image](Fii_3.png)
 
 
-- In this computer program, the failure-inducing input was a file that used a pair of brackets **[]** and a pair of parenthesis **()** but was very spaced out from each other (this is shown in the screenshot above). For better reference, here is an example: ```[link]                  (space)```
-* * Although, this input caused a bug because the syntax for a link was incorrect. Moreover, the program executed a similar behavior to the program above, which outputted the syntactically incorrect link along with the correct links. Thus, the symptom of having an incorrect output occurred due to the input and bug. 
+- In this computer program, the failure-inducing input was a file that used a pair of brackets **[]** and a pair of parenthesis **()** but was very spaced out from each other (this is shown in the screenshot above). For better reference, here is an example: ```[link]                  (spaces)```
+* * Yet, this input caused a bug because the syntax for a link was incorrect. Moreover, the program executed a similar behavior to the program above, which outputted the syntactically incorrect link along with the correct links. Thus, the symptom of having an incorrect output occurred due to the input and bug. 
