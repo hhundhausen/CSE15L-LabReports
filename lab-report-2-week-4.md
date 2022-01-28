@@ -11,8 +11,7 @@
 
 
 - In this computer program, the failure-inducing input was a file that had an open parenthesis at the end (this is shown in the screenshot above). For better reference, it was similar to: ```[link](print.com```
-
-Yet, this input caused a bug in the computer program of not having the right syntax for a file which thus created a symptom, a faulty in the program behavior, to be an infinite loop. 
+* * Yet, this input caused a bug in the computer program of not having the right syntax for a file which thus created a symptom, a faulty in the program behavior, to be an infinite loop. 
 
 # Code Change Two: *A File With An Image Reference* 
 - Screenshot of the *code change* from **Github**: 
