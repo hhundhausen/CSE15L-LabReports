@@ -12,7 +12,7 @@
 
 
 - In this computer program, the failure-inducing input was a file with an open parenthesis at the end (shown in the screenshot above). For better reference, here is an example:  ```[link](print.com```
-* * Yet, this input caused a bug in the computer program to execute, which was that it did not have the correct syntax for a file. Thus, the bug made a faulty symptom in the program behavior, to be an output of an infinite loop.
+* * Yet, this input caused a bug in the computer program to execute, which was that it did not have the correct syntax for a file. Thus, the bug made a faulty symptom in the program behavior to be an output of an infinite loop.
 
 # Code Change Two: *A File With An Image Reference* 
 - Screenshot of the *code change* from **Github**: 
@@ -25,7 +25,7 @@
 
 
 - In this computer program, the failure-inducing input was a file with an image reference (shown in the screenshot above). For better reference, here is an example: ```![image](print.png)```
-* * Yet, this input caused a bug to excute because it had the wrong syntax. Furthermore, the input and bug made the program produce a symptom to appear which was an incorrect output; printing the image name with the other file names.
+* * Yet, this input caused a bug to excute because it had the wrong syntax. Furthermore, the input and bug made the program produce a symptom to appear which was an incorrect output; printing the image name with the other link names.
 
 
 # Code Change Three :  *A File That Uses [] and (), But Very Far Apart*
