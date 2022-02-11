@@ -1,34 +1,35 @@
-# # Week 6 Lab Report 3 
+## Week 6 Lab Report 3 
 ---
+
 # Streamlining ssh Configuration 
 ---
 
 # Step 1) Editing .ssh/config File
 
-Logging into ``ieng6`` from my computer has previously been a very tedious task, and the following line of code was a lot that would be have to typed everytime. 
+Logging into ``ieng6`` from my computer has previously been a very tedious task, and the following line of code was a lot that would have to be typed every time. 
 - ``$ssh cs15lwi22aco@ieng6.ucsd.edu``
 
-Additionally, becuase it was so long there were a lot of problems such as remembering it and grammar mistakes would happen at least once everytime when typing it out. However, this step shows that SSH has configuration files that allow me to save a lot time from typing. 
+Additionally, because my log-in was very long, many problems constantly occurred, such as remembering it and minor grammar mistakes. 
 
-To understand exactly the process of completing this was that in ``~/.ssh/config`` (which tells SSH what user-name to use when logging into specific servers), I was able to give a specific nickname using the lines of code that are presented in the screenshot below. 
+However, this step shows how the SSH configuration files ``~/.ssh/config`` (which tells SSH what username to use when logging into specific servers) have saved me a lot of time by creating a particular username. Moreover, I created a log-in with the username I specified using my public key. 
+
+For visual reference, this step and the code used to create the username are presented in the screenshot below. 
 
 ![image](ssh_config.png)
 
-# Step 2) SSH Command Logging Into ieng6 Account Using Alias Created 
+# Step 2) SSH Command + Alias Created to Log into ieng6 Account 
 
-After adding ``config`` file along with the code within the it(shown in the step above) and saving it, I was able to use the ``ssh`` command with only having to enter the alias I created which was my name ``helena``. This was an exteremly quicker line of code to write compared to the previous one. 
+After adding the ``config`` file to ``~/.ssh`` along with the code within it (shown in the step above), I could concatenate the alias created ``helena`` with the ``ssh`` command. Ultimately, this was a significantly faster line to write than the previous one. 
 
-Additionally, it originally took me **34 keystrokes** with the original username with the original line of code: 
+Originally, it took me **34 keystrokes** when using the previous log-in and the ``ssh command``:  
 - ``$ssh cs15lwi22aco@ieng6.ucsd.edu``
 
-But, now it takes me **11 keystrokes** with the new username when trying to enter the ``ssh command``: 
+Now, it takes me **11 keystrokes** with the new username and the ``ssh command``: 
 - ``$ssh helena``
 
-This has saved more than half the amount of time it originally took and the proability for errors significanlty decreased because I was able to type in a username that is simple for me to remember/type. 
+Overall, I have saved more than half the amount of time and decreased the likelihood of running into errors because I created a username that was simple and easy to remember/type. 
 
-It allowed me to use the key and log in with the username I specificed by using my public key. 
-
-Additionally, this step is presented as a visual referance in the screenshot below. 
+For visual reference, this step is presented in the screenshot below. 
 
 ![image](ssh_command.png)
 
@@ -36,19 +37,18 @@ Additionally, this step is presented as a visual referance in the screenshot bel
 
 # Step 3: SCP Command Coping A File to Account Using Alias Created
 
-This step is very similar to the one above. I used the ``scp`` command to copy a file ``WhereAmI.java`` to my ``ieng6`` account using the specific username created ``helena``. 
+This step is very similar to the one above because I used the ``scp`` command to copy a file ``WhereAmI.java`` to my ``ieng6`` account using the specific username created ``helena``.
 
-Additionally, following is the original line of code which took **39 keystrokes**:  
+Originally, it took me **39 keystrokes** when using the previous log-in and the ``scp command``:  
 - ``$scp cs15lwi22aco@ieng6.ucsd.edu~:\``
 
-But now with the username created the following line of code uses the same commade and only takes **16 keystrokes**: 
+Now, it takes me **16 keystrokes** with the new username and the ``scp command``: 
 - ``$scp helena~:\``
 
-Again, by creating this "alias" a lot of time is saved. 
+Ultimately, this step is an excellent representation of how creating a new alias can save time using any command. 
 
-Additionally, this step is presented as a visual referance in the screenshot below. 
+For visual reference, this step is presented in the screenshot below. 
 
-![image](scp_command.png)
-
+![image](scp_new_username.png)
 
 Thank you for reading this lab report! You've reached the end. 
