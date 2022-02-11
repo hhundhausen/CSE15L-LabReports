@@ -24,7 +24,7 @@ After adding the ``config`` file to ``~/.ssh`` along with the code within it (sh
 Originally, it took me **34 keystrokes** when using the previous log-in and the ``ssh command``:  
 - ``$ssh cs15lwi22aco@ieng6.ucsd.edu``
 
-Now, it takes me **11 keystrokes** with the new username and the ``ssh command``: 
+Now, it takes me **11 keystrokes** with the new log-in and the ``ssh command``: 
 - ``$ssh helena``
 
 Overall, I have saved more than half the amount of time and decreased the likelihood of running into errors because I created a username that was simple and easy to remember/type. 
@@ -42,10 +42,10 @@ This step is very similar to the one above because I used the ``scp`` command to
 Originally, it took me **39 keystrokes** when using the previous log-in and the ``scp command``:  
 - ``$scp cs15lwi22aco@ieng6.ucsd.edu~:\``
 
-Now, it takes me **16 keystrokes** with the new username and the ``scp command``: 
+Now, it takes me **16 keystrokes** with the new log-in and the ``scp command``: 
 - ``$scp helena~:\``
 
-Ultimately, this step is an excellent representation of how creating a new alias can save time using any command. 
+Ultimately, this step is an excellent representation of how creating a new alias can save time using different commands.
 
 For visual reference, this step is presented in the screenshot below. 
 
