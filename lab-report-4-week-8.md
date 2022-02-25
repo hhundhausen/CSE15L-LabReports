@@ -93,7 +93,7 @@ For my program to work for **Snippet 2**, I think a small change to my code is n
 
 **Snippet 3 Free-Response Question :** 
 
-For my program to work for **Snippet 3**, I think a bigger code fix is needed. Additionally, the test for **Snippet 3** outputs a ``StringIndexOutOfBoundsException``on *line 28* due to a significant issue. In a ``Snippet3.md`` file, the program can print any number of lines with any amount of spacing between brackets and parenthesis, but only if there is a link with the correct syntax following. The lines following are an example demonstrating this issue: 
+For my program to work for **Snippet 3**, I think a bigger code fix is needed. Additionally, the test for **Snippet 3** outputs a ``StringIndexOutOfBoundsException`` on *line 28* due to a significant issue. Based on the content of the ``Snippet3.md`` file, the program can print any number of lines with any amount of spacing between brackets and parenthesis, but only if there is a link with the correct syntax following. The lines following are an example demonstrating what the program is only able to output without an exception: 
 
 ``This line is a line. ``
 
@@ -106,7 +106,7 @@ For my program to work for **Snippet 3**, I think a bigger code fix is needed. A
 
 ``[another link!](some-page.html)``
 
-Therefore, I think a change of more than ten lines of code will be needed to allow the program to accept any number of lines and space between brackets and parenthesis without requiring a link with correct syntax to follow it. 
+Therefore, I think a change of more than ten lines of code will be needed. Since, the program needs to accept any number of lines and space between brackets and parenthesis without a link with correct syntax to follow it. 
 
     
 
