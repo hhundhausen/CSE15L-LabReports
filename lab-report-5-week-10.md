@@ -1,14 +1,16 @@
 # Lab Report 5 Week 10 
 ---
 
+# Links
+
 Link To Lab Group Repository: [click here!](https://github.com/smissula/markdown-parse)
 
 Link To Lastest Shared Markdown Parse: [click here!](https://github.com/ucsd-cse15l-w22/markdown-parse)
 
 # Difference #1 
 
-Difference #1 Features
-- The difference appears on line : 211 
+*Difference #1 Features* 
+- The difference appears on line : **211**
 - The difference is from the test file : ``194.md``
 - The contents of the test file ``194.md`` : 
 
@@ -16,7 +18,7 @@ Difference #1 Features
  
 `` [Foo*bar\]]``
 
-Difference #1 Outputs
+*Difference #1 Outputs*
 - Test file ``194.md`` expected output : ``[]``
 - Lab Group Output : ``[]``
 - Shared Markdown Parse Output : ``[url]``
@@ -37,14 +39,14 @@ The specific part of ``MarkdownParse.java`` that should be fixed is in the ``get
 
 # Difference #2  
 
-Difference #2 Features 
+*Difference #2 Features* 
 - The difference appears on line : 269 
 - The difference is from the test file : ``22.md``
 - The contents of the test file ``22.md`` : 
 
 ``[foo](/bar\* "ti\*tle")``
 
-Difference #3 Output
+*Difference #3 Output* 
 - Test file ``22.md`` expected output: ``[/bar\* "ti\*tle"]``
 - Lab Group Output : ``[/bar\* "ti\*tle"]``
 - Shared Markdown Parse Output : ``[]`` 
