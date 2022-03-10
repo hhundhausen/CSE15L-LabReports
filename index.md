@@ -11,6 +11,10 @@
 
 - Click this link for [Week 8 Lab Report 4!](https://hhundhausen.github.io/CSE15L-LabReports/lab-report-4-week-8.html)
 
+- Click this link for [Week 10 Lab Report 5!](https://hhundhausen.github.io/CSE15L-LabReports/lab-report-5-week-10.html)
+
+
+
 
 
 
