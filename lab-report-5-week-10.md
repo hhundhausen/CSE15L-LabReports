@@ -9,8 +9,8 @@ Link To Lastest Shared Markdown Parse: [click here!](https://github.com/ucsd-cse
 
 # Difference #1 
 
-*Difference #1 Features* 
-- The difference appears on line : **211**
+Difference #1 Features
+- The difference appears on line : *211*
 - The difference is from the test file : ``194.md``
 - The contents of the test file ``194.md`` : 
 
@@ -18,7 +18,7 @@ Link To Lastest Shared Markdown Parse: [click here!](https://github.com/ucsd-cse
  
 `` [Foo*bar\]]``
 
-*Difference #1 Outputs*
+Difference #1 Outputs
 - Test file ``194.md`` expected output : ``[]``
 - Lab Group Output : ``[]``
 - Shared Markdown Parse Output : ``[url]``
@@ -33,20 +33,20 @@ For the shared markdown parse to print empty brackets, there is a bug, a problem
 
 To fix the program, it needs to search and find the first opening parenthesis right after the last closing bracket; both should be right next to each other ``](``. If both are next, the program should return and move on to the following line. 
 
-The specific part of ``MarkdownParse.java`` that should be fixed is in the ``getLinks()`` method. The screenshot below visually shows this particular area in the program that should implement this solution. 
+The specific part of ``MarkdownParse.java`` that should be fixed is in the ``getLinks()`` method from lines **68** to **73**. The screenshot below visually shows this particular area in the program that should implement this solution. 
 
 ![image](redo_JoeCodeFix1.png)
 
 # Difference #2  
 
-*Difference #2 Features* 
-- The difference appears on line : 269 
+Difference #2 Features
+- The difference appears on line : *269* 
 - The difference is from the test file : ``22.md``
 - The contents of the test file ``22.md`` : 
 
 ``[foo](/bar\* "ti\*tle")``
 
-*Difference #3 Output* 
+Difference #3 Output
 - Test file ``22.md`` expected output: ``[/bar\* "ti\*tle"]``
 - Lab Group Output : ``[/bar\* "ti\*tle"]``
 - Shared Markdown Parse Output : ``[]`` 
@@ -62,6 +62,3 @@ For the shared markdown parse to print the link, there is a bug, a problem in th
 The specific part of ``MarkdownParse.java`` that should be fixed is in the ``getLinks()`` method. The screenshot below visually shows this particular area in the program that should implement this solution. 
 
 ![image](joe_codeFix2.png)
-
-
-
